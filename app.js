@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM form 'react-dom'
+import ReactDOM from 'react-dom'
 
 const title = React.createElement(
   'h1',
-  {id: 'title', className: 'header'}
+  {id: 'title', className: 'header'},
   'Hello world.'
 )
 

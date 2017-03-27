@@ -13,6 +13,7 @@
 - add .babelrc
 - add webpack.config.js
 - install npm-check
+- add app.js
 
 #Resources:
 

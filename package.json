@@ -2,9 +2,10 @@
   "name": "match_a_pair",
   "version": "0.0.1",
   "description": "Match a pair app for creating members to match a pair.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
