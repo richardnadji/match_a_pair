@@ -1,12 +1,10 @@
+//Libs
 import React from 'react'
 import ReactDOM from 'react-dom'
+//CSS
 import './css/style.css'
-
-const title = React.createElement(
-  'h1',
-  {id: 'title', className: 'header'},
-  'Hello world.'
-)
+//components
+import { title } from './src/components/Title'
 
 ReactDOM.render(
   title,
