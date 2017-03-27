@@ -1,0 +1,4 @@
+- dist folder
+- index.html
+- index.js
+- README.md
