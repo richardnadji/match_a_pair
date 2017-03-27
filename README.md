@@ -1,4 +1,4 @@
-#Steps:
+# Steps:
 
 - dist folder
 - index.html
@@ -14,14 +14,19 @@
 - add webpack.config.js
 - install npm-check
 - add app.js
+- install webpack-dev-server
+- install style-loader, css-loader
 
-#Resources:
+
+# Resources:
 
 - cdnjs.com
 - npmjs.com
 - https://webpack.github.io/
 - https://facebook.github.io/react/
 - https://babeljs.io/
+- https://github.com/webpack-contrib/style-loader
+- https://github.com/webpack-contrib/css-loader
 
 webpack:
 - https://webpack.github.io/docs/installation.html
