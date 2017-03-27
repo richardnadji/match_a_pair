@@ -16,6 +16,7 @@
 - add app.js
 - install webpack-dev-server
 - install style-loader, css-loader
+- install react-hot-loader
 
 
 # Resources:
@@ -27,6 +28,7 @@
 - https://babeljs.io/
 - https://github.com/webpack-contrib/style-loader
 - https://github.com/webpack-contrib/css-loader
+- https://github.com/gaearon/react-hot-loader#react-hot-loader
 
 webpack:
 - https://webpack.github.io/docs/installation.html
