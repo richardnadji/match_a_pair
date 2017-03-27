@@ -17,7 +17,8 @@
 - install webpack-dev-server
 - install style-loader, css-loader
 - install react-hot-loader
-
+- install sass-loader
+- install node-sass
 
 # Resources:
 
