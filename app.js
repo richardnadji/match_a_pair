@@ -1,11 +1,12 @@
 //Libs
-import ReactDOM, { render } from 'react-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
 //CSS
 import './src/css/style.scss'
 //components
-import { title } from './src/components/Title'
+import Title from './src/components/Title'
 
-render(
-  title,
+ReactDOM.render(
+  <Title title="Helloworld" />,
   document.getElementById('react-container')
 )

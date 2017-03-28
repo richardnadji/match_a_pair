@@ -1,8 +1,12 @@
 //Libs
-import React from 'react'
+import React, { PropTypes } from 'react'
 
-export const title = React.createElement(
-  'h1',
-  {id: 'title', className: 'header'},
-  'Hello world!!!'
-)
+const Title = props => {
+  return <h1>{props.title}</h1>
+}
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired
+}
+
+export default Title

@@ -1,3 +1,5 @@
+var webpack = require('webpack')
+
 module.exports = {
   entry: './app.js',
 
@@ -5,6 +7,12 @@ module.exports = {
     // path: 'build',
     filename: 'bundle.js'
   },
+
+  // devServer: {
+  //   inline: true,
+  //   contentBase: './build',
+  //   port: 3000
+  // },
 
   module: {
     loaders: [
