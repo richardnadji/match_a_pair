@@ -1,4 +1,3 @@
-//Libs
 import React, { PropTypes } from 'react'
 
 const Title = props => {

@@ -1,12 +1,14 @@
-//Libs
 import React from 'react'
-import ReactDOM from 'react-dom'
-//CSS
-import './src/css/style.scss'
-//components
 import Title from './src/components/Title'
 
-ReactDOM.render(
-  <Title title="Helloworld" />,
-  document.getElementById('react-container')
-)
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <Title title="Match a Pair!" />
+      </div>
+    )
+  }
+}
+
+export default App
