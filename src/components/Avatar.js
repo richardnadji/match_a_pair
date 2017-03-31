@@ -1,12 +1,14 @@
 import React, { PropTypes } from 'react'
 import './Avatar.scss'
 
+
 const Avatar = props => {
-  return <img className="img-circle" src={props.url} alt={props.name} />
+  return <img className={'img-circle-' + props.gender} src={props.photo} alt={props.name} />
 }
 
 Avatar.propTypes = {
-  url: PropTypes.string.isRequired,
+  gender: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 }
 
