@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import Checkbox from './FormComponents/Checkbox'
+import './AddUserForm.scss'
 
 export default class AddUserForm extends PureComponent {
   state = {
@@ -58,32 +59,27 @@ export default class AddUserForm extends PureComponent {
     return(
       <div className="add-user-form">
         <form onSubmit={this.onSubmit}>
-          <input
-            type="text"
+          <input type="text" className="input-text"
             value={this.state.email}
             onChange={this.onEmailChange}
             placeholder="Email"
           />
-          <input
-            type="text"
+          <input type="text" className="input-text"
             value={this.state.firstName}
             onChange={this.onFirstNameChange}
             placeholder="First Name"
           />
-          <input
-            type="text"
+          <input type="text" className="input-text"
             value={this.state.lastName}
             onChange={this.onLastNameChange}
             placeholder="Last Name"
           />
-          <input
-            type="text"
+          <input type="text" className="input-text"
             value={this.state.photoUrl}
             onChange={this.onPhotoUrlChange}
             placeholder="Photo url"
           />
-          <input
-            type="text"
+          <input type="text" className="input-text"
             value={this.state.birthday}
             onChange={this.onBirthdayChange}
             placeholder="Date of birth"
