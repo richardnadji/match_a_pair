@@ -14,7 +14,7 @@ class App extends Component {
         lastName: "Gadot",
         photo: "http://bit.ly/2oxIq74",
         birthday: "30-04-1985",
-        gender: "f",
+        gender: "female",
       },
       {
         email: "chrispine@test.com",
@@ -22,7 +22,7 @@ class App extends Component {
         lastName: "Pine",
         photo: "http://bit.ly/2nOdFvG",
         birthday: "26-08-1980",
-        gender: "m",
+        gender: "male",
       },
     ]
   }
@@ -31,8 +31,8 @@ class App extends Component {
     return user.firstName + ' ' + user.lastName
   }
 
-  onAddUser = email => {
-    this.state.users.push({email: email, firstName: "John", lastName: "Doe", photo: "http://default.pic", birthday: "00-00-0000", gender: "f"})
+  onAddUser = (email, firstName, lastName, photoUrl, birthday, gender) => {
+    this.state.users.push({email: email, firstName: firstName, lastName: lastName, photo: photoUrl, birthday: birthday, gender: gender})
     this.setState(this.state)
   }
 
@@ -59,7 +59,7 @@ class App extends Component {
             )
           }.bind(this))}
 
-        <AddUserForm onAddEmail={this.onAddUser} />
+        <AddUserForm onAdd={this.onAddUser} />
 
       </div>
     )

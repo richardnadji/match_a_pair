@@ -1,13 +1,14 @@
 import React, { PureComponent } from 'react'
+import Checkbox from './FormComponents/Checkbox'
 
 export default class AddUserForm extends PureComponent {
   state = {
-    email: '',
-    firstName: '',
-    lastName: '',
-    photoUrl: '',
-    birthday: '',
-    gender: '',
+      email: '',
+      firstName: '',
+      lastName: '',
+      photoUrl: '',
+      birthday: '',
+      gender: '',
   }
 
   onEmailChange = (e) => {
@@ -15,10 +16,42 @@ export default class AddUserForm extends PureComponent {
     this.setState({email: email})
   }
 
+  onFirstNameChange = (e) => {
+    const email = e.target.value
+    this.setState({firstName: email})
+  }
+
+  onLastNameChange = (e) => {
+    const email = e.target.value
+    this.setState({lastName: email})
+  }
+
+  onPhotoUrlChange = (e) => {
+    const email = e.target.value
+    this.setState({photoUrl: email})
+  }
+
+  onBirthdayChange = (e) => {
+    const email = e.target.value
+    this.setState({birthday: email})
+  }
+
+  onGenderChange = gender => {
+    this.setState({gender: gender})
+  }
+
   onSubmit = (e) => {
+    const { email, firstName, lastName, photoUrl, birthday, gender } = this.state
+
     if (e) e.preventDefault()
-    this.props.onAddEmail(this.state.email)
-    this.setState({email: ''})
+    this.props.onAdd(email, firstName, lastName, photoUrl, birthday, gender)
+    this.setState({email: '',
+                  firstName: '',
+                  lastName: '',
+                  photoUrl: '',
+                  birthday: '',
+                  gender: '',
+    })
   }
 
   render() {
@@ -29,8 +62,35 @@ export default class AddUserForm extends PureComponent {
             type="text"
             value={this.state.email}
             onChange={this.onEmailChange}
-            placeholder="email"
+            placeholder="Email"
           />
+          <input
+            type="text"
+            value={this.state.firstName}
+            onChange={this.onFirstNameChange}
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            value={this.state.lastName}
+            onChange={this.onLastNameChange}
+            placeholder="Last Name"
+          />
+          <input
+            type="text"
+            value={this.state.photoUrl}
+            onChange={this.onPhotoUrlChange}
+            placeholder="Photo url"
+          />
+          <input
+            type="text"
+            value={this.state.birthday}
+            onChange={this.onBirthdayChange}
+            placeholder="Date of birth"
+          />
+
+          <Checkbox label1="male" label2="female" handleCheckbox={this.onGenderChange} />
+
           <input type="submit" value="Submit" />
         </form>
       </div>
